@@ -10,11 +10,11 @@
 
 // int main() {
     
-//     A ishika;
-//     A Muskan;
+//     A priya;
+//     A singh;
     
-//     ishika.value=9272533;
-//     Muskan.value=9386725;
+//     priya.value=9272533;
+//     singh.value=9386725;
 
 //     cout<<ishika.value;
 //     cout<<endl;
@@ -168,22 +168,97 @@
     
 //  }
 
+// #include<iostream>
+//  using namespace std;
+
+//  class A
+//  {
+//    public:int a;
+//    public:A(int X)
+//    {
+//       a=X;
+//       cout<<a;
+//    }
+//  };
+// int main(){
+//    A obj(10);
+//    A obj1(obj);//one copy throgh assingment and second with parameter.
+//    cout<<obj1.a;
+
+
+//  }
+
+
+// ==============15/1/25===============
+
+
+// #include<iostream>
+//   using namespace std;
+//   class a
+//   {
+//  public:int *A;
+//  a(int X)
+//  {
+//   A=new int;
+//   A=x;
+//   cout<<*A;
+//  }
+//  /////mobike me photo hai//
+
+
+
+//   };
+// int main(){
+//   a obj(10);
+//   a obj1(obj) //deep copy
+
+// }
+
+
+// polimorphism==many forms== object ke,function ke operator ke.
+// Two type of polimorphism==
+// compile time == compile time hi de dete
+// 2 type---function overloading,operator  overloading
+
+
+// runtime== jab run time pr value input kre
+// 1 type---fuction overridding
+//OVER LOADING
+// #include<iostream>
+// using namespace std;
+
+// void show(int a){
+//   cout<<a;
+// }
+// void show(int a, int b){
+//   cout<<a+b;
+// }
+// int main(){
+
+//   show(10);
+//   show(10,11);
+// }
+
 #include<iostream>
- using namespace std;
+using namespace std;
 
- class A
- {
-   public:int a;
-   public:A(int X)
-   {
-      a=X;
-      cout<<a;
-   }
- };
+class A{
+  A(){
+    cout<<"constructor of A";
+  }
+  int a=11;
+};
+
+class B : public  A{
+  
+  public:B(){
+    cout<<"constructor of B";
+  }
+  
+};
 int main(){
-   A obj(10);
-   A obj1(obj);//one copy throgh assingment and second with parameter.
-   cout<<obj1.a;
+B obj;
+  cout<<obj.B;
+  
+}
 
-
- }

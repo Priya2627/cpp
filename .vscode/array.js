@@ -34,8 +34,11 @@ function priya(){
 
 //   ====================//splice,, add some elememt ,, kha add kha,, delete aur kha add=======================
        
-      arr1.splice(2,4,9)
-      console.log(arr1)
+    //   arr1.splice(2,4,9)
+    //   console.log(arr1)
+    // ============sort============
+
+    console.log(arr1.sort);
 
 
 
