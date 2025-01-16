@@ -238,32 +238,56 @@
 //   show(10);
 //   show(10,11);
 // }
+//obj ko add krenge
 
-#include<iostream>
+// obj overloading
+// #include<iostream>
+// using namespace std;
+// class london
+// {
+//   public:int value;
+//   public:london(int x=0)
+//   {
+//     value=x;
+//     // cout<<value;
+//   }
+//     london operator +(london obj)       //  london add(london obj)without operator use this
+//    {
+//     london obj4;
+//    obj4= value+obj.value;
+//    return obj4;
+//   }
+// };
+// int main(){
+// london obj1(10);
+// london obj2(11);
+// london obj3;
+// obj3=obj1+(obj2);
+// cout<<obj3.value;
+// }
+
+//function overriding
+
+#include <iostream>
 using namespace std;
 
-class london
+class A{
+
+  public:virtual void show()
+  {
+    cout<<"parent";
+  }
+};
+
+class b:public A
 {
-  public:int value;
-  public:london(int x=0){
-
-    value=x;
-    // cout<<value;
+  public:void show()
+  {
+    cout<<"child";
   }
-
-   london add(london obj){
-  
-    london obj4;
-   obj4= value+obj.value;
-   return obj4;
-  }
-
 };
 
 int main(){
-london obj1(10);
-london obj2(11);
-london obj3;
-obj3=obj1.add(obj2);
-cout<<obj3.value;
+  A *obj=new b();
+  obj->show();
 }
