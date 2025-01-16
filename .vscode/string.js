@@ -12,10 +12,12 @@
 //     alert("hiiiii")
 // }
 
-// function tanisha(){
-    // alert("hello dost") browser window
-    // console.log(); console
-    // document.write("<h1> Hello </h1>") 3no display ke liye use krte hai
+function tanisha(){
+    // alert("hello dost") 
+    // // browser window
+    // console.log(); 
+    // document.write("<h1> Hello </h1>")
+    //  3no display ke liye use krte hai
 
     // let text="JavaScriptIsEasy";
     // console.log(typeof(text)) data type btayega
@@ -34,9 +36,9 @@
 
     // document.write
     
-// }
+}
 
-// tanisha()
+tanisha()
 
 
 // function rahul(){
@@ -69,7 +71,7 @@
 
 
 
-function priya(){
+// function priya(){
 
     // let name="priyaa"
     // let age=22;
@@ -79,10 +81,10 @@ function priya(){
 
     // with backtick
 
-    let name="                priyaa";
-     let age=22;
-     let ans=`hello ${name} and your age is ${age}`;
-     console.log(name.trim());
+    // let name="                priyaa";
+    //  let age=22;
+    //  let ans=`hello ${name} and your age is ${age}`;
+    //  console.log(name.trim());
 
 
     // let text= `java"Sript"  <h1>'is'</h1>"easy language"`
@@ -95,6 +97,6 @@ function priya(){
 
 
 
-}
+// }
 
-priya();
+// priya();

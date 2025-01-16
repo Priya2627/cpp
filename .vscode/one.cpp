@@ -242,23 +242,28 @@
 #include<iostream>
 using namespace std;
 
-class A{
-  A(){
-    cout<<"constructor of A";
+class london
+{
+  public:int value;
+  public:london(int x=0){
+
+    value=x;
+    // cout<<value;
   }
-  int a=11;
+
+   london add(london obj){
+  
+    london obj4;
+   obj4= value+obj.value;
+   return obj4;
+  }
+
 };
 
-class B : public  A{
-  
-  public:B(){
-    cout<<"constructor of B";
-  }
-  
-};
 int main(){
-B obj;
-  cout<<obj.B;
-  
+london obj1(10);
+london obj2(11);
+london obj3;
+obj3=obj1.add(obj2);
+cout<<obj3.value;
 }
-
