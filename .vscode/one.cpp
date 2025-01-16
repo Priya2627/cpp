@@ -268,26 +268,53 @@
 
 //function overriding
 
+// #include <iostream>
+// using namespace std;
+
+// class A{
+
+//   public:virtual void show()
+//   {
+//     cout<<"parent";
+//   }
+// };
+
+// class b:public A
+// {
+//   public:void show()
+//   {
+//     cout<<"child";
+//   }
+// };
+
+// int main(){
+//   A *obj=new b();
+//   obj->show();
+// }
+
 #include <iostream>
 using namespace std;
 
 class A{
-
-  public:virtual void show()
-  {
-    cout<<"parent";
-  }
+  public:virtual void show()=0;   //pure virtual function //abstraction
 };
 
 class b:public A
 {
-  public:void show()
-  {
+  public:void show(){
     cout<<"child";
-  }
+  };
 };
-
+class c:public A
+{
+  public:void show(){
+    cout<<"child1";
+  };
+};
 int main(){
-  A *obj=new b();
-  obj->show();
+ b obj;
+ obj.show();
+
+ c obj1;
+ obj1.show();
 }
