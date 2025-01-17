@@ -343,6 +343,30 @@
 
 
 ///example of abstraction
+// #include <iostream>
+// using namespace std;
+// class A{
+//   public:virtual void show()=0;
+//   int a;
+// };
+// class b: public A{
+//   public :void show()
+//   {
+//     cout<<"i am b";
+//   }
+// };
+// class c: public A{
+//   public :void show()
+//   {
+//     cout<<"i am c";
+//   }
+// };
+// int main(){
+//   A *obj=new c();
+//   obj->show();
+// }
+
+
 #include <iostream>
 using namespace std;
 
@@ -350,19 +374,11 @@ class A{
   public:virtual void show()=0;
   int a;
 };
-class b: public A{
-  public :void show()
-  {
-    cout<<"i am b";
-  }
-};
-class c: public A{
-  public :void show()
-  {
-    cout<<"i am c";
-  }
-};
+
+
 int main(){
   A *obj=new c();
   obj->show();
+
+
 }
