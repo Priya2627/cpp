@@ -291,30 +291,78 @@
 //   A *obj=new b();
 //   obj->show();
 // }
+////////////////abstractio============
+// #include <iostream>
+// using namespace std;
 
+// class A{
+//   public:virtual void show()=0;   // jab ek se jyada pure virtual function tab abstract bnta hai//abstraction ===== jo class abstrct hoti h uska obj nhi bnta.
+// };
+
+// class b:public A
+// {
+//   public:void show(){
+//     cout<<"child";
+//   };
+// };
+// class c:public A
+// {
+//   public:void show(){
+//     cout<<"child1";
+//   };
+// };
+// int main(){
+//  b obj;
+//  obj.show();
+
+//  c obj1;
+//  obj1.show();
+// }
+
+
+
+// #include <iostream>
+// using namespace std;
+
+// class A{
+//   int a,b;
+//   public:
+
+//   void add(int x,int y){
+
+//     a=x;
+//     b=y;
+//     cout<<a+b;
+//   }
+// };
+
+// int main(){
+//   A obj;
+//   obj.add(5,6);
+// }
+
+
+///example of abstraction
 #include <iostream>
 using namespace std;
 
 class A{
-  public:virtual void show()=0;   //pure virtual function //abstraction
+  public:virtual void show()=0;
+  int a;
 };
-
-class b:public A
-{
-  public:void show(){
-    cout<<"child";
-  };
+class b: public A{
+  public :void show()
+  {
+    cout<<"i am b";
+  }
 };
-class c:public A
-{
-  public:void show(){
-    cout<<"child1";
-  };
+class c: public A{
+  public :void show()
+  {
+    cout<<"i am c";
+  }
 };
 int main(){
- b obj;
- obj.show();
-
- c obj1;
- obj1.show();
+  A *obj=new c();
+  obj->show();
 }
