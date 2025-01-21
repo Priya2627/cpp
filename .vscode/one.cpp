@@ -291,7 +291,7 @@
 //   A *obj=new b();
 //   obj->show();
 // }
-////////////////abstractio============
+////////////////abstraction============
 // #include <iostream>
 // using namespace std;
 
@@ -365,20 +365,58 @@
 //   A *obj=new c();
 //   obj->show();
 // }
+// ==============keyword===========
+// Static,this
 
+// 1.this pointer examle
+// #include <iostream>
+// using namespace std;
 
+// class A{
+//   public :int a;
+//   public:A(int a){
+//     a=a;
+//     cout<<a;
+//   }
+// };
+// // apni class ke instace varible ko initialize krta hai=this pointer
+// int main(){
+//   A obj(10);
+//   cout<<obj.a;
+// // }
+
+//static bina obj ke class ko call kr deta hai.
 #include <iostream>
 using namespace std;
 
 class A{
-  public:virtual void show()=0;
-  int a;
+ 
+public: static void show(){
+
+  cout<<"priya singh";
+}
 };
-
-
 int main(){
-  A *obj=new c();
-  obj->show();
+  A::show();  
+  // :: isse bina obj bnaye functin ko call krna
+}
 
 
+// variable ko initialize krna pdega call krne ke liye
+//example for variable
+#include <iostream>
+using namespace std;
+class A{
+public: static void show(){
+
+  cout<<"priya singh";
+}
+
+public:static int a;
+};
+int A::a=10;
+int main(){
+  A::show();
+  cout<<A::a;  
+  
 }

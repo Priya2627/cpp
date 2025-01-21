@@ -6,7 +6,7 @@ function priya(){
 
    rosh.innerHTML="hello iam developer" //cahnge on the click button chnage
    let a=prompt("enter colour")
-    document.body.style.background=a
+    document.body.style.background=a;
       document.body.style.color=white;
     
 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   #change{
+    height: 400px;
+    width: 400px;
+    border: 2px solid orangered;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+
+   .two{
+    display: flex;
+    gap: 2rem;
+   }
+
+   .two div{
+    height: 100px;
+    width: 100px;
+    border: 3px solid pink;
+   }
+
+   .one{
+    background-image: url("tar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+
+   .one1{
+    background-image: url('./myphoto.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+
+   .one2{
+    background-image: url("tar.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+   }
+
+   
+</style>
+<body>
+      
+
+    <h1 id="change"></h1>
+    <div class="two">
+       <div class="one" onmouseenter="onee()" onmouseleave="reset()"></div>
+       <div class="one1" onmouseenter="onee1()" onmouseleave="reset1()"></div>
+       <div class="one2" onmouseenter="onee2()" onmouseleave="reset2()"></div>
+    </div>
+    
+
+    <script src="dom2.js"></script>
+</body>
+</html>
